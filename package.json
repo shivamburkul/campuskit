@@ -2,7 +2,7 @@
   "name": "campuskit",
   "version": "1.0.0",
   "private": true,
-  "description": "CampusKit \u2014 a free, fast, privacy-first utility platform for students and everyday users.",
+  "description": "CampusKit — a free, fast, privacy-first utility platform for students and everyday users.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,23 +12,24 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "lucide-react": "0.469.0",
     "next": "15.5.25",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
     "pdf-lib": "1.17.1",
     "pdfjs-dist": "4.10.38",
-    "lucide-react": "0.469.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "typescript": "5.4.5",
     "@types/node": "20.12.12",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
-    "tailwindcss": "3.4.4",
-    "postcss": "8.5.28",
     "autoprefixer": "10.4.19",
     "eslint": "8.57.0",
     "eslint-config-next": "15.5.25",
+    "postcss": "8.5.28",
+    "tailwindcss": "3.4.4",
+    "typescript": "5.4.5",
     "vitest": "3.2.6"
   },
   "engines": {

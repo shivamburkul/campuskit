@@ -6,6 +6,7 @@ import { Analytics } from '@/components/layout/Analytics';
 import { ServiceWorkerRegister } from '@/components/layout/ServiceWorkerRegister';
 import { ConsentBanner } from '@/components/layout/ConsentBanner';
 import { themeBootstrapScript } from '@/lib/hooks/theme';
+import { Analytics as VercelAnalytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteFooter />
         <ConsentBanner />
         <Analytics />
+        <VercelAnalytics />
         <ServiceWorkerRegister />
       </body>
     </html>
