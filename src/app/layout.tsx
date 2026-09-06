@@ -52,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${inter.variable} ${outfit.variable}`} suppressHydrationWarning>
       <head>
         <script suppressHydrationWarning dangerouslySetInnerHTML={{ __html: themeBootstrapScript() }} />
+        <meta name="google-site-verification" content="ZLp4e1BJBSVnbF_d9pQdWusMLEnSbNmeIDt1jtrq_NM" />
       </head>
       <body className="flex min-h-screen flex-col bg-paper font-sans text-ink-900 antialiased">
         <SiteHeader />
