@@ -37,3 +37,7 @@ Thumbs.db
 public/workbox-*.js
 public/worker-*.js
 public/fallback-*.js
+
+# Files for Local Only
+campuskit_export.py
+campuskit_full_source.txt
