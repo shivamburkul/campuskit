@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Build / coverage
+dist/
+build/
+coverage/
+
+# Env / secrets (keep .env.example)
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.production.local
+
+# Logs & OS
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Generated / tooling
+*.tsbuildinfo
+
+# Optional PWA workbox outputs
+public/workbox-*.js
+public/worker-*.js
+public/fallback-*.js
+
+# Files for Local Only
+campuskit_export.py
+campuskit_full_source.txt

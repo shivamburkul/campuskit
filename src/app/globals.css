@@ -1,0 +1,373 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Outfit', ui-serif, Georgia, serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary-50: 238 242 255;
+  --color-primary-100: 224 231 255;
+  --color-primary-200: 199 210 254;
+  --color-primary-300: 165 180 252;
+  --color-primary-400: 129 140 248;
+  --color-primary-500: 99 102 241;
+  --color-primary-600: 79 70 229;
+  --color-primary-700: 67 56 202;
+  --color-primary-800: 55 48 163;
+  --color-primary-900: 49 46 129;
+
+  --color-accent-50: 238 242 255;
+  --color-accent-100: 224 231 255;
+  --color-accent-200: 199 210 254;
+  --color-accent-300: 165 180 252;
+  --color-accent-400: 129 140 248;
+  --color-accent-500: 99 102 241;
+  --color-accent-600: 79 70 229;
+  --color-accent-700: 67 56 202;
+  --color-accent-800: 55 48 163;
+  --color-accent-900: 49 46 129;
+
+  --color-coral-700: 194 65 12;
+  --color-coral-500: 251 146 60;
+  --color-coral-400: 253 186 116;
+  --color-coral-200: 254 215 170;
+  --color-coral-100: 255 237 213;
+
+  --color-amber-900: 120 53 15;
+  --color-amber-700: 180 83 9;
+  --color-amber-600: 217 119 6;
+  --color-amber-500: 245 158 11;
+  --color-amber-300: 252 211 77;
+  --color-amber-200: 253 230 138;
+  --color-amber-100: 254 243 199;
+
+  --color-teal-500: 20 184 166;
+  --color-teal-100: 204 251 241;
+
+  --color-paper: 250 250 252;
+  --color-surface: 255 255 255;
+  --color-ink-50: 248 250 252;
+  --color-ink-100: 226 232 240;
+  --color-ink-200: 203 213 225;
+  --color-ink-300: 148 163 184;
+  --color-ink-400: 100 116 139;
+  --color-ink-500: 100 116 139;
+  --color-ink-600: 71 85 105;
+  --color-ink-700: 51 65 85;
+  --color-ink-800: 30 41 59;
+  --color-ink-900: 30 41 59;
+  --color-ink-950: 15 23 42;
+}
+
+.dark {
+  --color-paper: 8 9 14;
+  --color-surface: 18 20 28;
+
+  --color-ink-50: 244 246 251;
+  --color-ink-100: 28 32 48;
+  --color-ink-200: 215 220 232;
+  --color-ink-300: 154 163 181;
+  --color-ink-400: 139 147 167;
+  --color-ink-500: 139 147 167;
+  --color-ink-600: 107 115 134;
+  --color-ink-700: 42 47 61;
+  --color-ink-800: 26 29 39;
+  --color-ink-900: 18 20 28;
+  --color-ink-950: 244 246 251;
+
+  --color-primary-50: 22 20 58;
+  --color-primary-100: 30 27 75;
+  --color-primary-200: 42 38 112;
+  --color-primary-300: 165 180 252;
+  --color-primary-400: 129 140 248;
+  --color-primary-500: 139 156 255;
+  --color-primary-600: 165 180 252;
+  --color-primary-700: 199 210 254;
+  --color-primary-800: 224 231 255;
+  --color-primary-900: 18 16 31;
+
+  --color-accent-50: 22 20 58;
+  --color-accent-100: 30 27 75;
+  --color-accent-200: 42 38 112;
+  --color-accent-300: 165 180 252;
+  --color-accent-400: 129 140 248;
+  --color-accent-500: 139 156 255;
+  --color-accent-600: 165 180 252;
+  --color-accent-700: 199 210 254;
+  --color-accent-800: 224 231 255;
+  --color-accent-900: 18 16 31;
+
+  --color-coral-100: 59 36 16;
+  --color-coral-200: 74 46 20;
+  --color-coral-400: 253 186 116;
+  --color-coral-500: 251 146 60;
+  --color-coral-700: 124 45 18;
+
+  --color-amber-100: 59 42 8;
+  --color-amber-200: 74 53 16;
+  --color-amber-500: 245 158 11;
+  --color-amber-700: 180 83 9;
+  --color-amber-900: 69 26 3;
+
+  --color-teal-100: 10 46 42;
+  --color-teal-500: 45 212 191;
+}
+
+.dark .text-ink-500 {
+  color: rgb(154 163 181);
+}
+.dark .text-ink-600 {
+  color: rgb(154 163 181);
+}
+.dark .text-ink-700 {
+  color: rgb(215 220 232);
+}
+.dark .text-ink-800 {
+  color: rgb(215 220 232);
+}
+.dark .text-ink-900 {
+  color: rgb(244 246 251);
+}
+.dark .text-ink-950 {
+  color: rgb(244 246 251);
+}
+
+html {
+  scroll-behavior: auto !important;
+  color-scheme: light;
+  overscroll-behavior-y: none;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: rgb(var(--color-paper));
+  color: rgb(var(--color-ink-900));
+  font-family: var(--font-sans);
+  -webkit-overflow-scrolling: touch;
+}
+
+.dark body {
+  color: rgb(244 246 251);
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: none !important;
+  scroll-snap-align: none !important;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.dark .glass {
+  background: rgba(18, 20, 28, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, rgb(var(--color-primary-600)), rgb(var(--color-primary-400)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fade-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+  margin-left: 0;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.search-title-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.search-title-text {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+.search-title-marquee:hover .search-title-text {
+  animation: search-scroll 6s linear infinite alternate;
+  text-overflow: clip;
+  max-width: none;
+}
+@keyframes search-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 12rem));
+  }
+}
+
+/* Matrix result cells: when a computed value is too long to fit, it scrolls
+   continuously in one direction (like the homepage's marquee) instead of
+   being cut off, with a duplicated copy and a visible gap so it's clear
+   where one pass ends and the next begins. */
+.matrix-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 6s linear infinite;
+}
+.matrix-marquee-track:hover,
+.matrix-marquee-track:focus {
+  animation-play-state: paused;
+}
+
+.tool-card {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.3s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+  z-index: 1;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  /* Each tool-card's backdrop-filter blur is expensive to composite, and this
+     page renders 100+ of them. Skipping layout/paint for cards currently off
+     screen (without changing how they look once visible) is what keeps
+     scrolling smooth on low-end devices — this has no visual effect. */
+  content-visibility: auto;
+  contain-intrinsic-size: 140px 140px;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 50;
+}
+.dark .tool-card {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(18, 20, 28, 0.65);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.dark .tool-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(18, 20, 28, 0.8);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 640px) {
+  .tool-card {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.category-scroll {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-top: 1.25rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: -0.25rem;
+  -webkit-overflow-scrolling: touch;
+  z-index: 10;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  touch-action: pan-x;
+}
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+.category-scroll > * {
+  scroll-snap-align: none;
+}
+
+html {
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* ---------------------------------------------------------------
+   REMOVE NUMBER INPUT ARROWS/SPINNERS GLOBALLY
+   --------------------------------------------------------------- */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Ensure matrix inputs are also covered */
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
